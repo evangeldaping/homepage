@@ -171,6 +171,12 @@
   }
 
   /* Experience and additional info styles */
+  .experience-fh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
@@ -263,4 +269,10 @@
   
   .additional-info__languages-item {
     color: var(--secondary-text-color);
+  }
+
+  @media screen and (max-width: 576px) {
+    .experience-fh {
+      flex-direction: column;
+    }
   }
